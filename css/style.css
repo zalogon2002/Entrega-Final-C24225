@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  
+}
+
+:root {
+  font-size: 24px;
+  
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+ 
+}
+
+body {
+  /*display: flex;
+  flex-direction: column;*/
+  min-height: 100vh;
+  /*font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;*/
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  /*height:fit-content;*/
+  background-color: rgb(255, 255, 255);
+
+}
+
+header {
+  background-color: rgb(138, 43, 226);
+  /*display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 120px;*/
+  
+}
+
+footer {
+  margin: auto;
+  height: fit-content;
+  background-color: rgb(99, 98, 98);
+  color: antiquewhite;
+  
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+ font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+/*Estilos Header*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar__menu{
+  font-size: 0.75rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar__logo{
+  max-width: 300px;
+}
+
+.navbar__item{
+  color: blanchedalmond;
+}
+
+.navbar__link{
+  color: blanchedalmond;
+  list-style: none;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar__link:hover{
+  color: rgb(60, 60, 60);
+}
+
+.fa-solid {
+  margin: 0 5px;
+}
+
+
+/*Estilos Index*/
+
+.proyecto{
+  background-image: url(../img/cuantos_dias_por_semana_debo_correr.png);
+  padding: 120px 0;
+  background-size: cover;
+}
+
+
+.proyecto_hero_contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+    
+}
+
+.proyecto_hero_link{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background-color: #c7d243;
+  margin-top: 20px;
+  padding: 8px 45px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.proyecto_hero_link:hover{
+background-color: #81882c;
+}
+
+
+
+/* Estilos Reseñas*/
+
+.resenias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 20px 0;
+  padding: 20px;
+
+}
+
+.resenias_titulo{
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+
+
+/*Estilos para Productos*/
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+  padding: 20px;
+  
+}
+
+.productos_card_foto img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.productos_card_boton{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background-color: #c7d243;
+  margin-top: 20px;
+  padding: 5px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.productos_card_boton:hover{
+  background-color: #81882c;
+}
+
+.productos_titulo{
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+/*Estilos Carrito*/
+
+.tabla_carrito {
+  margin-top: 20px;
+  border-collapse:collapse;
+  width: 100%;
+  background-color: #9e9d9d;
+}
+
+.tabla_carrito th, .tabla_carrito td {
+  /*padding: 12px 15px;*/
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+
+
+
+/*Estilos Formulario Contacto*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  
+}
+
+.formulario_texto h2{
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 36px;
+  
+}
+
+.formulario_info{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.formulario_info form label{
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.formulario_info form input{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.boton_enviar{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background-color: #c7d243;
+  margin-top: 20px;
+  padding: 10px 60px;
+  border-radius: 50px;
+  text-decoration: none;
+  border-style: none;
+
+}
+
+.boton_enviar:hover{
+  background-color: #81882c;
+}
+
+
+/*Estilos Footer*/
+
+.navbar__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__footer__menu{
+  list-style: none;
+  font-size: 14px;
+}
+
+.footer__copy{
+  text-align: center;
+  font-size: 12px;
+  margin-bottom:  10px;
+}
+
+.navbar__footer{
+  display: flex;
+
+}
+
+.navbar__footer__item{
+  text-align: left;
+}
+
+
+
+/* TIPOGRAFÍAS */
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@media (min-width:420px) and (max-width:767px) {
+  .navbar__menu{
+    display: none;
+  }
+
+  .navbar {
+    display:block;
+  }
+
+  .proyecto{
+    background-image: url(../img/cuantos_dias_por_semana_debo_correr.png);
+    padding: 80px 40px;
+    background-size: cover;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding: 20px;
+
+  }
+
+  .resenias {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding: 20px;
+    
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    
+  }
+
+  .formulario_info{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+  }
+}
+
+@media (min-width:767px) and (max-width:1199px){
+  .navbar {
+    justify-content: center;
+    
+  }
+
+  .resenias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 20px;
+   }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 20px;
+  }
+
+  .proyecto{
+    background-image: url(../img/cuantos_dias_por_semana_debo_correr.png);
+    padding: 80px 40px;
+    background-size: cover;
+  }
+}
+
