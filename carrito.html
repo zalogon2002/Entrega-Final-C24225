@@ -32,23 +32,23 @@
             <table class="tabla_carrito">
                 <thead class="tabla_carrito_cabezal">
                     <tr>
-                        <th class="poppins-regular">Producto</th>
-                        <th class="poppins-regular">Precio</th>
-                        <th class="poppins-regular">Cantidad</th>
-                        <th class="poppins-regular">Subtotal</th>
+                        <th class="poppins-bold">Producto</th>
+                        <th class="poppins-bold">Precio</th>
+                        <th class="poppins-bold">Cantidad</th>
+                        <th class="poppins-bold">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody id="carrito_productos">
-                    <!-- Aquí se cargarán los productos del carrito -->
+                    <!-- Carga de productos del carrito -->
                 </tbody>            
             </table>
-            <div class="text-end mb-3">
+            <div class="total_compra poppins-bold">
                 <h4>Total: $<span id="total_carrito">0</span></h4>
             </div>
     
-            <div class="d-flex justify-content-between">
-                <button id="limpiar_carrito" class="btn btn-danger">Volver al Inicio</button>
-                <button id="finalizar_compra" class="btn btn-success">Finalizar Compra</button>
+            <div class="botones_carrito ">
+                <button id="limpiar_carrito" class="btnInicio poppins-regular">Volver al Inicio</button>
+                <button id="finalizar_compra" class="btnFinalizar poppins-regular">Finalizar Compra</button>
             </div>
 
         </div>
@@ -72,7 +72,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/14f85755d9.js" crossorigin="anonymous"></script>
-    <script src="js/script3.js"></script>
-    <script src="js/carrito.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-carrito.js"></script>
 </body>
 </html>

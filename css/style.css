@@ -66,7 +66,11 @@ h3 {
 p {
   font-size: 14px;
 }
+
+
+
 /*Estilos Header*/
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -137,6 +141,10 @@ p {
 background-color: #81882c;
 }
 
+.proyecto_hero_texto{
+  font-size: 18px;
+}
+
 
 
 /* Estilos Reseñas*/
@@ -183,6 +191,7 @@ background-color: #81882c;
   padding: 5px 25px;
   border-radius: 50px;
   text-decoration: none;
+  border-style: none;
 }
 
 .productos_card_boton:hover{
@@ -197,17 +206,76 @@ background-color: #81882c;
 
 /*Estilos Carrito*/
 
+.pagina_carrito h2{
+  text-align: center;
+  font-size: 36px;
+  margin-top: 40px;
+
+}
+
 .tabla_carrito {
   margin-top: 20px;
   border-collapse:collapse;
   width: 100%;
-  background-color: #9e9d9d;
+  
 }
 
-.tabla_carrito th, .tabla_carrito td {
+.tabla_carrito th {
   /*padding: 12px 15px;*/
+  font-size: 20px;
+  background-color: #838383;
   border: 1px solid #000000;
   text-align: center;
+}
+
+.tabla_carrito td {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background-color: #e3e1e1;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.total_compra{
+  text-align:right
+}
+
+.botones_carrito{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnInicio {
+  background-color: #f60707;
+  color: antiquewhite;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 5px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  border-style: none;
+}
+
+.btnInicio:hover{
+  background-color: #f84b4b;
+}
+
+.btnFinalizar{
+  background-color: #c7d243;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 5px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  border-style: none;
+  
+  
+  
+}
+
+.btnFinalizar:hover{
+  background-color: #9ea828;
 }
 
 
@@ -218,50 +286,67 @@ background-color: #81882c;
 .formulario {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  align-items: center;
+  width: 80%;
+  margin: auto; 
   
 }
 
 .formulario_texto h2{
-  margin: 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
   font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
   
 }
 
-.formulario_info{
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0;
+.formulario_texto p{
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+.formulario_estilo { 
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0px;
+}
+
+.formulario_estilo input,
+.formulario_estilo textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    font-size: 14px;
+}
+
+.formulario_estilo label{
+  display: block;
 }
 
 .formulario_info form label{
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .formulario_info form input{
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
+  
+  font-size: 14px;
 }
 
-.boton_enviar{
-  display: inline-block;
-  font-size: 20px;
+.boton_enviar {
+  width: 100%;
+  font-size: 18px;
   color: white;
   background-color: #c7d243;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   padding: 10px 60px;
-  border-radius: 50px;
   text-decoration: none;
   border-style: none;
+  border-radius: 50px;
 
 }
 
@@ -283,11 +368,13 @@ background-color: #81882c;
   font-size: 14px;
 }
 
-.footer__copy{
+.footer__copy {
   text-align: center;
-  font-size: 12px;
-  margin-bottom:  10px;
+  font-size: 14px;
+  padding-bottom: 15px; 
+  
 }
+
 
 .navbar__footer{
   display: flex;
@@ -370,18 +457,20 @@ background-color: #81882c;
     
   }
 
+  /*Estilos Formularios*/
+
   .formulario {
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
-    align-items: center;
+    width: 100%;
+    margin: auto; 
     
   }
 
   .formulario_info{
     display: flex;
     flex-direction: column;
-    margin: 30px 30px;
+    /*margin: 5px 5px;*/
   }
 }
 

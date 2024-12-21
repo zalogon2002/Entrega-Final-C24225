@@ -30,24 +30,26 @@
         <section class="formulario container">
             <div class="formulario_texto">
                 <h2 class="poppins-black">HACENOS TU CONSULTA</h2>
-            </div>
+                <p class="poppins-regular">Descubre productos diseñados para runners apasionados como tú. Desde equipamiento hasta accesorios, te ayudamos a alcanzar tus metas con calidad, comodidad y estilo en cada paso. ¡Corre más lejos!</p>
+            </div>  
             <div class="formulario_info">
-                <form action="https://formspree.io/f/xzzbeaeo" method="POST">
+                <form class="formulario_estilo" action="https://formspree.io/f/xzzbeaeo" method="POST">
                     <!-- INGRESO DE DATOS AL FORMULARIO -->
-                     <label for="nombre">Nombre:</label>
-                     <input type="text" placeholder="Esribí tu nombre"  requiredmaxlength="50" minlength="5"    id="nombre"    name="nombre">
+                     <label class="poppins-regular" for="nombre">Nombre:</label>
+                     <input type="text"    id="nombre"    name="nombre" required>
                      <br>
-                     <label for="mail">Email:</label>
-                     <input type="email" placeholder="Esribí tu Email"  requiredmaxlength="70" minlength="10"   id="mail"     name="mail">
+                     <label class="poppins-regular" for="mail">Email:</label>
+                     <input type="email"      name="mail">
                      <br>
-                     <label for="telefono">Teléfono:</label>
-                     <input type="tel" placeholder="Ingresá tu celular"     requiredmaxlength="15" minlength="10"      id="telefono"    name="telefono">
+                     <label class="poppins-regular" for="telefono">Teléfono:</label>
+                     <input type="tel"       id="telefono"    name="telefono">
                      <br>
-                     <label for="mensaje">Comentario:</label><br>
-                     <textarea name="mensaje" id="mensaje" rows="6"     cols="60"placeholder="Dejanos tu mensaje">
+                     <label class="poppins-regular" for="mensaje">Comentario:</label><br>
+                     <textarea name="mensaje" id="mensaje" rows="6" required>
                      </textarea>
                      <br>
-                     <input class="boton_enviar" type="submit">
+                     <button class="boton_enviar poppins-bold" type="submit">Quiero Info</button>
+                     <!-- <input class=" poppins-bold boton_enviar" type="submit"> -->
                 </form>
             </div>
         </section>
@@ -72,7 +74,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/14f85755d9.js" crossorigin="anonymous"></script>
-    <script src="js/script3.js"></script>
-    <script src="js/carrito.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-carrito.js"></script>
 </body>
 </html>
